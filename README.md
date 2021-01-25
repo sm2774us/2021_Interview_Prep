@@ -8,9 +8,14 @@ My notes for my 2021 Interview Preparation.
 ![Image-3](./assets/mind_map_code_interview.png)
 
 We'll cover the following:
+* [0: Introduction](#0-introduction)
 * [1: Resources](#1-resources)
 * [2: Data Structures](#2-data-structures)
 * [3: Algorithms](#3-algorithms)
+
+## 0. Introduction
+
+[Introduction](./000_Introduction/README.md)
 
 ## 1. Resources
 
