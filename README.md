@@ -99,3 +99,6 @@ We'll cover the following:
 |insertion sort| `O(n)` | `O(n**2)` | `O(n**2)` | If the list is sorted or mostly this is fast.|
 |counting sort| `O(n+k)` | `O(n+k)` | `O(n+k)` | `k` is highest value possible, because it builds the counting table|
 |quicksort| `O(nlgn)` | `O(nlgn)` | `O(n**2)` | You can force `O(nlgn)` worst case by randomizing the input.  Traditionally isn't great on sorted input, however, by different partition schemes you can get it to `O(n)` if presorted.|
+
+* [Algorithm-Notes](./003_Algorithms/README.md)
+* [Algorithm-Notes](./003_Algorithms/README.md)
