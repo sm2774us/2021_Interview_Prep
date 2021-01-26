@@ -22,11 +22,6 @@ Given below are the 2 basic operations that can be performed on a queue. Please 
 ###### Fig 4. Visualization of Basic Operations of Queues
 _____________
 
-Furthermore, the following additional functions are provided for a stack in order to check its status.
-- Peek: Return the front element of the queue without deleting it.
-- isEmpty: Check if the queue is empty.
-- isFull: Check if the queue is full.
-
 ##### Queue Implementation
 As with stacks, a queue can be implemented either using an array or a linked list.
 
