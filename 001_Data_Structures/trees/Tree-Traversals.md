@@ -2,6 +2,17 @@
 
 ![Image-1](./images/tree-traversals.png)
 
+What we will cover:
+1. [All DFS traversals in Python in 1 line](#all-dfs-traversals-preorder-inorder-postorder-in-python-in-1-line) 
+1. [Morris Traversal - TC:O(N) ; SC:O(1) ](#morris-traversal)
+   - [Morris Traversal - Inorder Traversal](#morris-traversal---inorder-traversal)
+   - [Morris Traversal - Preorder Traversal](#morris-traversal---preorder-traversal)
+   - [Morris Traversal - Postorder Traversal](#morris-traversal---postorder-traversal) 
+1. [Traversal using Stack Data Structure - TC:O(N) ; SC:O(N) ](#using-a-stack)
+   - [Using a stack - Inorder Traversal](#using-a-stack---inorder-traversal)
+   - [Using a stack - Preorder Traversal](#using-a-stack---preorder-traversal)
+   - [Using a stack - Postorder Traversal](#using-a-stack---postorder-traversal) 
+
 ## All DFS traversals (preorder, inorder, postorder) in Python in 1 line
 
 ```python
@@ -145,32 +156,7 @@ def postorderTraversal(root):
 * TC: `O(n)`
 * SC: `O(h)` [ where, `h` is the height of the tree ]
 
-In pre-order, the order should be
-
-`root -> left -> right`
-
-But when we use stack, the order should be reversed:
-
-`right -> left -> root`
-
-**Preorder Traversal**
-
-```python
-class Solution:
-    def preorderTraversal(self, root: TreeNode) -> List[int]:
-        res, stack = [], [(root, False)]
-        while stack:
-            node, visited = stack.pop()  # the last element
-            if not node:
-                continue
-            if visited:
-                res.append(node.val)
-            else:  # preorder: root -> left -> right
-                stack.append((node.right, False))
-                stack.append((node.left, False))
-                stack.append((node, True))
-        return res
-```
+### Using a stack - Inorder Traversal
 
 In inorder, the order should be
 
@@ -203,6 +189,37 @@ class Solution2(object):
         return result
 ```
 
+### Using a stack - Preorder Traversal
+
+In pre-order, the order should be
+
+`root -> left -> right`
+
+But when we use stack, the order should be reversed:
+
+`right -> left -> root`
+
+**Preorder Traversal**
+
+```python
+class Solution:
+    def preorderTraversal(self):
+        res, stack = [], [(root, False)]
+        while stack:
+            node, visited = stack.pop()  # the last element
+            if not node:
+                continue
+            if visited:
+                res.append(node.val)
+            else:  # preorder: root -> left -> right
+                stack.append((node.right, False))
+                stack.append((node.left, False))
+                stack.append((node, True))
+        return res
+```
+
+### Using a stack - Postorder Traversal
+
 In postorder, the order should be
 
 `left -> right -> root`
@@ -229,3 +246,8 @@ class Solution:
                 stack.append((node.left, False))
         return res
 ```
+
+##Related LeetCode Problems:
+* [LeetCode - Problem 94 - Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/)
+* [LeetCode - Problem 144 - Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/)
+* [LeetCode - Problem 145 - Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/)
