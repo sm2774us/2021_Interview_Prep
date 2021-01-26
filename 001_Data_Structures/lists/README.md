@@ -13,6 +13,6 @@ There is a general theoretical programming concept of a list, and there is the s
 #### An Array Vs A List
 A **list** is a different kind of data structure from an **array**.
 The biggest difference is in the idea of direct access Vs sequential access. Arrays allow both; direct and sequential access, while lists allow only sequential access. And this is because the way that these data structures are stored in memory.
-The structure of the list doesn’t support numeric index like an array is.
+The structure of the list doesn’t support numeric index like an array does.
 
 - **Jupyter Notebook:** [Lists.ipynb](Lists.ipynb)

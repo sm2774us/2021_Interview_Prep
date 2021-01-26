@@ -39,7 +39,7 @@ We'll cover the following:
 - **Jupyter Notebook:** [Linked Lists.ipynb](Linked Lists.ipynb)
 
 ###### Doubly Linked List
-- **Module:** [SinglyLinkedList.py](DoublyLinkedList.py)
+- **Module:** [DoublyLinkedList.py](DoublyLinkedList.py)
 - **Jupyter Notebook:** [Linked Lists.ipynb](Linked Lists.ipynb)
 
 ###### Circular Linked List
