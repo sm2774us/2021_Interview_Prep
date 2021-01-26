@@ -106,4 +106,4 @@ We'll cover the following:
 |quicksort| `O(nlgn)` | `O(nlgn)` | `O(n**2)` | You can force `O(nlgn)` worst case by randomizing the input.  Traditionally isn't great on sorted input, however, by different partition schemes you can get it to `O(n)` if presorted.|
 
 * [Algorithm-Notes](./003_Algorithms/README.md)
-* [Algorithm-Notes](./003_Algorithms/README.md)
+* [Algorithm-Implementation-Notes](./004_Algorithm_Implementations_In_Python/README.md)
